@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harshvardhan Nawandar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000000; /* solid black background */
+      color: #eee;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    #home {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px 60px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      animation: fadeInUp 1.2s ease forwards;
+      gap: 50px;
+    }
+
+    .home-text {
+      flex: 1;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .home-text h3 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: #bbb;
+      letter-spacing: 2px;
+      font-weight: 500;
+      text-transform: uppercase;
+      opacity: 0;
+      transform: translateY(10px);
+      animation-delay: 0.3s;
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+
+    .home-text h1 {
+      font-size: 56px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      background: linear-gradient(45deg, #ff00cc, #333399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transform: translateY(15px);
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+
+    .home-text h2 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #ddd;
+      opacity: 0;
+      transform: translateY(20px);
+      animation-delay: 0.7s;
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+
+    .home-text h2 span {
+      background: linear-gradient(45deg, #ff00cc, #333399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 25px;
+      opacity: 0;
+      animation-delay: 0.9s;
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+
+    .socials a {
+      font-size: 30px;
+      color: #bbb;
+      transition: color 0.3s ease, transform 0.3s ease;
+      filter: drop-shadow(0 0 3px #ff00cc);
+    }
+
+    .socials a:hover {
+      color: #ff00cc;
+      transform: scale(1.2);
+      filter: drop-shadow(0 0 8px #ff00cc);
+    }
+
+    .circle {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      animation: fadeIn 1.6s ease forwards;
+      opacity: 0;
+      transform: translateY(25px);
+      animation-delay: 1.1s;
+      animation-fill-mode: forwards;
+      animation-name: fadeInUp;
+      animation-duration: 1s;
+    }
+
+    .circle img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid transparent;
+      box-shadow: 0 0 40px #ff00cc, 0 0 60px #333399;
+      transition: box-shadow 0.4s ease;
+      cursor: pointer;
+    }
+
+    .circle img:hover {
+      box-shadow: 0 0 60px #ff00cc, 0 0 100px #333399;
+      transform: scale(1.05);
+      transition: box-shadow 0.4s ease, transform 0.4s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-text">
+      <h3>Hello, It's Me</h3>
+      <h1>Harshvardhan Nawandar</h1>
+      <h2>And I'm a <span>SE E&amp;TC Student</span></h2>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="circle">
+      <img src="MyPhoto.jpg" alt="Profile Photo" />
+    </div>
+  </section>
+
+</body>
+</html>

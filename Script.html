@@ -1,0 +1,13 @@
+<script>
+    function showSection(id) {
+      let sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.style.display = "none"); // hide all
+      if (id === "home") {
+        document.getElementById(id).style.display = "flex";
+      } else {
+        document.getElementById(id).style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
